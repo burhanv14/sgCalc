@@ -192,7 +192,7 @@ export default function Page() {
     <span class="relative" onClick={() => handleResetClick()}>Reset</span>
     </a>
     </div>
-    {totalCredits!=0 && showRes && <h1 class="text-5xl text-white text-opacity-100 py-10 pl-3 md:p-128 md:py-16"><span className={jackquard2.className}>Current SGPA : {(numCredits/totalCredits) * 10}</span></h1>}
+    {totalCredits!=0 && showRes && <h1 class="text-4xl md:text-5xl text-white text-opacity-100 py-10 pl-3 md:p-128 md:py-16"><span className={jackquard2.className}>Current SGPA : {(numCredits/totalCredits) * 10}</span></h1>}
     </form>
    </div>
   </div>
