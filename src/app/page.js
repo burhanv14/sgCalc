@@ -143,13 +143,13 @@ export default function Page() {
           onChange={event => handleInputChange(i, event)}
           type="number" 
           min="1"
-          class="bg-stone-500  text-gray-900 text-sm rounded-md block p-2 md:p-1" 
+          class="font-serif bg-stone-500  text-gray-900 text-sm rounded-md block p-2 md:p-1" 
           placeholder="Subject Credit Points"/>
           <select  
           name='value' 
           value={input.value} 
           onChange={event => handleInputChange(i, event)}
-          class="bg-stone-500  text-gray-900 text-sm rounded-md block py-2 md:p-2" 
+          class="font-serif bg-stone-500 text-gray-900 text-sm rounded-md block py-2 md:p-2" 
           >
           <option value=" ">Grade</option>
           <option value="A">A</option>
@@ -164,10 +164,10 @@ export default function Page() {
          </div>
           <div class="flex md:flex-row md:pt-2 md:pl-48 gap-3">
           {inputs.length - 1 === i && (
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 md:py-1 dark:focus:ring-gray-700 dark:border-gray-700" onClick={() => handleAddClick(i)}>Add</button>
+            <button type="button" class="font-serif text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 md:py-1 dark:focus:ring-gray-700 dark:border-gray-700" onClick={() => handleAddClick(i)}>Add</button>
           )}
           {inputs.length !== 1 && (
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5  me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 md:py-1 dark:focus:ring-gray-700 dark:border-gray-700" onClick={() => handleRemoveClick(i)}>Remove</button>
+            <button type="button" class="font-serif text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5  me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 md:py-1 dark:focus:ring-gray-700 dark:border-gray-700" onClick={() => handleRemoveClick(i)}>Remove</button>
           )}
           </div>
         </div>
@@ -181,15 +181,15 @@ export default function Page() {
     <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-black group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
     <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
     <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-    <span class="relative">Submit</span>
+    <span class="relative font-serif">Submit</span>
     </a>
     </button>
-    <a href="#_" class="relative px-5 py-2 font-medium text-white group" onClick={() => handleResetClick()}>
+    <a href="#_" class="relative px-5 py-1.5 font-medium text-white group" onClick={() => handleResetClick()}>
     <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out sm:transform translate-x-0 -skew-x-12 bg-black group-hover:bg-purple-700 group-hover:skew-x-12"></span>
     <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-black group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
     <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
     <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-    <span class="relative" onClick={() => handleResetClick()}>Reset</span>
+    <span class="relative font-serif" onClick={() => handleResetClick()}>Reset</span>
     </a>
     </div>
     {totalCredits!=0 && showRes && <h1 class="text-4xl md:text-5xl text-white text-opacity-100 py-10 pl-3 md:p-128 md:py-16"><span className={jackquard2.className}>Current SGPA : {(numCredits/totalCredits) * 10}</span></h1>}
