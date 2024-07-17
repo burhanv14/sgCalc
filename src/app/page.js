@@ -7,6 +7,7 @@ import { Jacquard_12_Charted } from 'next/font/google'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Spline from '@splinetool/react-spline'
+import Footer from './footer'
 
 
 
@@ -205,6 +206,9 @@ export default function Page() {
     <div className="hidden md:block md:pt-0 md:absolute md:right-0 md:top-7 md:h-full md:w-1/2">
             <Spline scene="https://prod.spline.design/53UfXp-hqeAip-6w/scene.splinecode"/>
     </div>
+    </div>
+    <div container class="w-full text-center">
+      <Footer/>
     </div>
   </div>
   )
